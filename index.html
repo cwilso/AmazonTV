@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="http://www.amazon.com/favicon.ico">
+		<title>Amazon Video on Demand [prototype]</title>
+		<!--  We use jQuery, and jQuery Tools -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script> 
+	</head>
+	
+	<link rel="stylesheet" href="tv.css">
+	<body> <!-- 1152x648 -->
+		<div id='toolbar'>
+			<span id='vod'>Video On Demand</span>
+			<img id='imgLogo' src='logo.png' >
+			<span class='selectable' id='browse'>Browse</span>
+			<span class='selectable' id='search'><img id='imgSearch' src='search.png'>Search</span>
+			<span id='right'>
+				<span id='welcome'>Hello, <span id='login'>Chris Wilson</span> <img class='selectable' id='imgLogout' src='close.png'></span>
+				<span class='selectable' id='menu'><img id='imgMenu' src='menu.png'>Menu</span>
+			</span>
+		</div>
+
+		<div class='catheader'>My Video Library</div>
+		<div class='cat'>
+			<span class='item'>
+				<span class='imagealigner'><span class='aligner'><img class='selectable itemimg' src='items/myvids1.jpg'></span></span>
+				<span class='description'>The Little Princess</span>
+			</span>
+
+			<span class='item'>
+				<span class='imagealigner'><span class='aligner'><img class='selectable itemimg' src='items/myvids2.jpg'></span></span>
+				<span class='description'>Nick & Norah's Infinite Playlist</span>
+			</span>
+
+			<span class='item'>
+				<span class='imagealigner'><span class='aligner'><img class='selectable itemimg' src='items/myvids3.jpg'></span></span>
+				<span class='description'>The Princess Bride</span>
+			</span>
+
+			<span class='item'>
+				<span class='imagealigner'><span class='aligner'><img class='selectable itemimg' src='items/myvids4.jpg'></span></span>
+				<span class='description'>There's Something About Mary</span>
+			</span>
+
+		</div>
+
+		<div class='catheader'>New Releases</div>
+		<div class='cat'>
+			<span class='item'>
+				<span class='imagealigner'><span class='aligner'><img class='selectable itemimg' src='items/newrel1.jpg'></span></span>
+				<span class='description'>The Town</span>
+			</span>
+
+			<span class='item'>
+				<span class='imagealigner'><span class='aligner'><img class='selectable itemimg' src='items/newrel2.jpg'></span></span>
+				<span class='description'>Legend of the Guardians: The Owls of Ga'Hoole</span>
+			</span>
+
+			<span class='item'>
+				<span class='imagealigner'><span class='aligner'><img class='selectable itemimg' src='items/newrel3.jpg'></span></span>
+				<span class='description'>Disney's A Christmas Carol</span>
+			</span>
+
+			<span class='item'>
+				<span class='imagealigner'><span class='aligner'><img class='selectable itemimg' src='items/newrel4.jpg'></span></span>
+				<span class='description'>The Sorcerer's Apprentice</span>
+			</span>
+
+		</div>
+
+
+<script src="dpad.js"></script>
+		<script> 
+		// execute your scripts when the DOM is ready. this is mostly a good habit
+		$(function() {
+		 
+			// initialize scrollable
+//			$(".scrollable").scrollable();
+
+			// disable keyboard nav
+//			$(".scrollable").data("scrollable").getConf().keyboard = false;
+
+			// Set up our keyboard nav code
+			document.onkeydown=keydown;
+    		
+		});
+
+	
+		
+		</script> 
+
+<script>
+var movies = { 
+	"MyVideos": [
+		{
+			"title": "The Little Princess",
+			"thumbnail": "items/myvids1.jpg",
+			"largethumbnail": "",
+			"description": "An aristocratic child forced by fate from her home in India to a cheerless London boarding school.",
+			"stars": "Shirley Temple",
+			"director": "Walter Lang",
+			"runtime": "1 hour 31 minutes",
+			"rating": "NR",
+			"releasedate": "01/01/1943",
+			"studio": "Legend Films",
+			"reviewslink": "http://www.amazon.com/The-Little-Princess/product-reviews/B001L4910O/ref=atv_sr_review_cm_cr_acr_txt?ie=UTF8&showViewpoints=1",
+			"rating": {
+				"average":"4",
+				"5star": "7",
+				"4star": "2",
+				"3star": "2",
+				"2star": "1",
+				"1star": "0"
+			},
+			"watchNow": "http://www.amazon.com/gp/product/B001L4910O/ref=avod_yvl_watch_now"
+		},
+		{
+			"title": "Nick & Norah's Infinite Playlist",
+			"thumbnail": "items/myvids2.jpg",
+			"largethumbnail": "items/myvids2.jpg",
+			"description": "Two bridge-and-tunnel teenagers, nursing broken hearts, fall in love during one sleepless night in New York while searching for their favorite band's unannounced show.",
+			"stars": "Michael Cera, Kat Dennings",
+			"director": "Peter Sollett",
+			"runtime": "1 hour 30 minutes",
+			"rating": "PG13",
+			"releasedate": "2008",
+			"studio": "Sony Pictures Home Entertainment",
+			"reviews": {
+				"reviewslink": "http://www.amazon.com/Nick-Norahs-Infinite-Playlist/product-reviews/B001PNV9FG/ref=atv_sr_review_cm_cr_acr_txt?ie=UTF8&showViewpoints=1",
+				"average":"3.5",
+				"5star": "25",
+				"4star": "24",
+				"3star": "10",
+				"2star": "9",
+				"1star": "10"
+			},
+			"watchNow": "http://www.amazon.com/gp/product/B001PNV9FG"
+		}
+	]
+};
+
+/*
+ 			"rental": {
+				24hr 2.99
+			},
+			"purchase": "7.49",
+
+/*/
+
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,35 @@
+html { width: 100%; height: 100%; overflow: hidden; font: 12px "Arial", sans-serif; }
+body { background: black; margin: 0px; width: 100%; height: 100%; }
+#toolbar { 	border: 1px solid rgb(73,73,74); border-width: 1px 0px; width: 100%; height: 40px; 
+			background: -webkit-gradient(linear, left bottom, left top, from(rgb(57,58,59)), to(rgb(85,85,86))); }
+#vod	{	position: absolute; width: 100%; text-align: center; color: white; margin-top: 11px; font-weight: bold; font-size: 16px; }
+#imgLogo { margin-top:11px; margin-left: 6px; width: 128px; height: 25px; }
+#browse {	display: inline-block; width: 70px; height: 18px; vertical-align: top; margin-top: 5px; margin-left: 15px; 
+			-webkit-box-shadow: 0 0 1px 1px #666; border: 1px solid #2a2a2a; border-radius: 6px; background: black;
+			background: -webkit-gradient(linear, left bottom, left top, from(#282828), to(#404040));
+			color: #eee; font-size: 13px; padding: 7px 0px 3px; text-align: center }
+#search {	display: inline-block; width: 150px; height: 19px; vertical-align: top; margin-top: 5px; margin-left: 15px; 
+			-webkit-box-shadow: inset 0 0 1px 1px #888; border: 1px solid #333; border-radius: 20px; background: white;
+			color: #808080; font-size: 13px; padding: 7px 0px 3px 10px;  }
+#imgSearch { margin-right: 5px; vertical-align: top }
+#right { float: right }
+#welcome {  display: inline-block; width: 160px; height: 18px; vertical-align: top; margin-top: 7px; margin-right: 10px; 
+			color: rgb(223,139,13); font-weight: 900; font-size: 11px; padding: 7px 5px 3px; text-align: center }
+#imgLogout { margin: -1px 5px 0px 5px; border-radius: 9px; /*border-radius is for highlight */  vertical-align: top }
+#menu {  	display: inline-block; width: 70px; height: 18px; vertical-align: top; margin-top: 5px; margin-right: 10px; 
+			a-webkit-box-shadow: 0 0 1px 1px #666; border: 1px solid #2a2a2a; border-radius: 6px; background: black;
+			background: -webkit-gradient(linear, left bottom, left top, from(#282828), to(#404040));
+			color: #eee; font-weight: bold; font-size: 13px; padding: 7px 5px 3px; text-align: center }
+#imgMenu { margin-right: 5px; margin-top: -1px; vertical-align: top }
+
+.catheader { color: rgb(223,139,13); font-weight: 900; font-size: 16px; margin: 5px }
+
+.item { display: inline-block; text-align: center; width: 190px; height: 200px; vertical-align: top }
+.imagealigner { display: table; width: 190px; height: 130px;  }
+.imagealigner .aligner { display: table-cell; vertical-align: bottom;  text-align: center }
+.item .description { display: block; color: #eee; margin-top: 4px; font-size: 15px; text-align: center }
+
+
+
+.selected { -webkit-box-shadow: 0 0 3px 3px rgb(223,139,13) !important; }
+.itemimg.selected { -webkit-box-shadow: 0 0 6px 6px rgb(223,139,13) !important; }  /* Make it more noticeable */
