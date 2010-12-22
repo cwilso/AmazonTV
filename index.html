@@ -83,7 +83,10 @@
 
 			// Set up our keyboard nav code
 			document.onkeydown=keydown;
-    		
+			$(".selectable").mouseenter(mouseenter);
+			$(".selectable *").mouseenter(mouseenter);
+			$(".selectable *").mouseleave(mouseleave);
+			$(".selectable").mouseleave(mouseleave);
 		});
 
 	
